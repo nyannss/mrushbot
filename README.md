@@ -2,7 +2,9 @@
 Automation for mrush.net!
 ⭐ Star if you like this! ⭐
 
-This content is provided for educational purposes only. It is not professional advice. The authors are not liable for any actions taken based on the information provided. Use at your own risk.
+⚠️ This content is provided for educational purposes only. The author is not responsible for any action taken based on anything provided. 
+
+**USE AT YOUR OWN RISK**.
 
 ## Features
 - Auto Battle (Lair and Arena)

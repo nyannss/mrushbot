@@ -6,13 +6,14 @@ This content is provided for educational purposes only. It is not professional a
 
 ## Features
 - Auto Battle (Lair and Arena)
+- Auto clan lair
+- Auto claim daily task reward
 - Batch Account
-- ~~Use Proxy~~ (still bug)
+- Use Proxy option
 
 ### Upcoming features
-- Auto claim task reward
 - Auto raid
-- Auto clan raid
+- Auto claim story task reward
 
 ## Getting Started
 To get started with this project, you'll need to clone the repository and set up a virtual environment. This will allow you to install the required dependencies without affecting your system-wide Python installation.
@@ -35,13 +36,25 @@ pip install -r requirements.txt
 ### Running the Application
 Make sure to install all dependencies. To run the application, run the following command:
 ```
-python main.py --username YourUsername --password YourPassword
+python main.py --username=YourUsername --password=YourPassword
 ```
 
 ### Running multi-account
 Copy `accounts.csv.example` to `account.csv` and enter your username and password in there. Run this command:
 ```
 python batch.py
+```
+
+### Running with proxy
+Copy `proxies.csv.example` to `proxies.csv` and enter your username, password, host, and port in there. Run this command:
+```
+python main.py --username=YourUsername --password=YourPassword --proxy
+```
+
+OR if batch
+
+```
+python batch.py --proxy
 ```
 
 ## Contributing

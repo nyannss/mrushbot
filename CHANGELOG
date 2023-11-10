@@ -3,6 +3,7 @@ Changelog for "mrushbot"
 Version 1.0.1 - 2023-11-10
 - Added option proxy connection
 - Add clan lair and daily task to automation
+- Random user-agent
 
 Version 1.0.0 - 2023-11-09
 - Initial release

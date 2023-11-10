@@ -6,6 +6,7 @@ from src.colors import Colors
 from src.helpers import find_element_safely
 import csv
 import random
+import ua_generator
 
 def runBot (username, password, proxy=False):
     # Set user agent
@@ -15,8 +16,11 @@ def runBot (username, password, proxy=False):
         options = webdriver.ChromeOptions()
 
         # Set Custom UserAgent
-        user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.123 Safari/537.36"
+        user_agent = ua_generator.generate()
+        # user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.123 Safari/537.36"
         options.add_argument(f"user-agent={user_agent}")
+        print(f"{Colors.OKBLUE}ℹ️ User-Agent: {user_agent}")
+
 
         # Disable load image for load faster
         prefs = {"profile.managed_default_content_settings.images": 2}
